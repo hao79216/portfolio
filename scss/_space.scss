@@ -1,0 +1,136 @@
+// 元件外間距
+.m0-auto{
+    margin: 0 auto;
+}
+.mb1{
+    margin-bottom: $space;
+}
+.mb2{
+    margin-bottom: $space-2;
+}
+.mb3{
+    margin-bottom: $space-3;
+}
+.mb4{
+    margin-bottom: $space-4;
+}
+.mb5{
+    margin-bottom: $space-5;
+}
+.mb6{
+    margin-bottom: $space-6;
+}
+.mb7{
+    margin-bottom: $space-7;
+}
+.mb8{
+    margin-bottom: $space-8;
+}
+.mb-xl{
+    margin-bottom: $space*11;
+}
+
+@media (max-width: 992px) {
+    .m0-auto-lg{
+        margin: 0 auto;
+    }
+    .mb1-lg{
+        margin-bottom: $space;
+    }
+    .mb2-lg{
+        margin-bottom: $space-2;
+    }
+    .mb3-lg{
+        margin-bottom: $space-3;
+    }
+    .mb4-lg{
+        margin-bottom: $space-4;
+    }
+    .mb5-lg{
+        margin-bottom: $space-5;
+    }
+    .mb6-lg{
+        margin-bottom: $space-6;
+    }
+    .mb7-lg{
+        margin-bottom: $space-7;
+    }
+    .mb8-lg{
+        margin-bottom: $space-8;
+    }
+    .mb-xl-lg{
+        margin-bottom: 100px;
+    } 
+}
+@media (max-width: 768px){
+    .m0-auto-md{
+        margin: 0 auto;
+    }
+    .mb1-md{
+        margin-bottom: $space;
+    }
+    .mb2-md{
+        margin-bottom: $space-2;
+    }
+    .mb3-md{
+        margin-bottom: $space-3;
+    }
+    .mb4-md{
+        margin-bottom: $space-4;
+    }
+    .mb5-md{
+        margin-bottom: $space-5;
+    }
+    .mb6-md{
+        margin-bottom: $space-6;
+    }
+    .mb7-md{
+        margin-bottom: $space-7;
+    }
+    .mb8-md{
+        margin-bottom: $space-8;
+    }
+    .mb-xl-md{
+        margin-bottom: 60px;
+    } 
+}
+
+@media (max-width: 576px){
+    .m0-auto-sm{
+        margin: 0 auto;
+    }
+    .mb1-sm{
+        margin-bottom: $space;
+    }
+    .mb2-sm{
+        margin-bottom: $space-2;
+    }
+    .mb3-sm{
+        margin-bottom: $space-3;
+    }
+    .mb4-sm{
+        margin-bottom: $space-4;
+    }
+    .mb5-sm{
+        margin-bottom: $space-5;
+    }
+    .mb6-sm{
+        margin-bottom: $space-6;
+    }
+    .mb7-sm{
+        margin-bottom: $space-7;
+    }
+    .mb8-sm{
+        margin-bottom: $space-8;
+    }
+    .mb-xl-sm{
+        margin-bottom: 60px;
+    } 
+}
+
+.mt-xl{
+    margin-top: $space*11;
+}
+.mr2{
+    margin-right: $space*2;
+}

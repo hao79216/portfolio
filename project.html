@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>作品一覽 - Eddie Huang</title>
+    <meta name="description" content="UI/UX設計師｜化繁為簡，找出最棒的解決方案">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eddie Huang - UI/UX 作品集">
+    <meta property="og:image" content="./images/Eddie_Huang.png">
+    <meta property="og:description" content="UI/UX設計師｜化繁為簡，找出最棒的解決方案">
+    <meta property="og:url" content="網址">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 選單 -->
+        <nav class="menu extend d-md-none">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li class="menuItem">
+                        <a href="https://www.behance.net/hungjihao" target="_blank" class="btn-icon text-center">
+                            <i class="fa-brands fa-behance text-icon"></i>
+                        </a>
+                    </li>
+                    <li class="menuItem">
+                        <a href="https://www.linkedin.com/in/%E5%BF%97%E8%B1%AA-%E9%BB%83-0971a2238/" target="_blank"
+                            class="btn-icon text-center">
+                            <i class="fa-brands fa-linkedin-in text-icon text-center"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png" alt="Eddie Huang Logo">
+                </a>
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li class="menuItem"><a href="project.html" class="btn btn-link">作品</a></li>
+                    <li class="menuItem"><a href="about.html" class="btn btn-link">關於</a></li>
+                    <li class="menuItem"><a href="Resume.pdf" target="_blank" class="btn btn-link">簡歷</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 漢堡選單 -->
+        <nav class="menu extend d-none d-md-block">
+            <div class="container">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li>
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="Eddie Huang Logo">
+                        </a>
+                    </li>
+                    <li class="burgerMenu">
+                        <a href="#" class="burgerMenu-btn">
+                            <i class="fa-solid fa-bars text-icon text-center"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burgerList">
+            <div class="container">
+                <div class="burgerClose mb6">
+                    <a href="#" class="burgerClose-btn text-gray-800"><i class="fa-solid fa-xmark text-icon"></i></a>
+                </div>
+                <ul class="d-flex flex-column justify-content-center align-items-center">
+                    <li class="burgerList-item"><a href="project.html" class="burgerList-btn">作品</a></li>
+                    <li class="burgerList-item"><a href="about.html" class="burgerList-btn">關於</a></li>
+                    <li class="burgerList-item mb6"><a href="Resume.pdf" target="_blank" class="burgerList-btn">簡歷</a>
+                    </li>
+                    <li class="burgerList-item"><a href="https://www.behance.net/hungjihao" target="_blank"
+                            class="burgerList-btn"><i class="fa-brands fa-behance-square text-icon"></i></a></li>
+                    <li class="burgerList-item"><a
+                            href="https://www.linkedin.com/in/%E5%BF%97%E8%B1%AA-%E9%BB%83-0971a2238/" target="_blank"
+                            class="burgerList-btn"><i class="fa-brands fa-linkedin-in text-icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 作品區 -->
+        <div class="container text-center mb-xl mb8-md mb5-sm">
+            <ul class="filter mb6 mb4-md">
+                <li class="filter-item btn btn-primary" data-filter="all">所有作品</li>
+                <li class="filter-item btn btn-outline-gray-500" data-filter="app">APP</li>
+                <li class="filter-item btn btn-outline-gray-500" data-filter="web">WEB</li>
+            </ul>
+            <ul class="row mb2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                <li class="col-4 col-lg-6 col-md-12 project app">
+                    <a class="card" href="./project/picchu.html">
+                        <img class="card-img" src="./images/img_project cover/project_picchu.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-app">APP</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">Picchu</h2>
+                                    <p class="text-gray-600">外拍揪團應用程式</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project web">
+                    <a class="card" href="./project/bikefun.html">
+                        <img class="card-img" src="./images/img_project cover/project_bikefun.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-web">WEB</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">BIKE FUN</h2>
+                                    <p class="text-gray-600">自行車道地圖資訊網</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project web">
+                    <a class="card" href="./project/travel.html">
+                        <img class="card-img" src="./images/img_project cover/project_tourguide.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-web">WEB</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">Travel</h2>
+                                    <p class="text-gray-600">台灣旅遊景點網</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project app">
+                    <a class="card" href="./project/Briany Check.html">
+                        <img class="card-img" src="./images/img_project cover/project_brianycheck.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-app">APP</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4 text-gray-700">Brainy Check</h2>
+                                    <p class="text-gray-600">團體分帳應用程式</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project app">
+                    <a href="./project/Fooind.html" class="card">
+                        <img class="card-img" src="./images/img_project cover/project_fooind.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-app">APP</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">Fooind</h2>
+                                    <p class="text-gray-600">美食搜尋應用地圖</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project web">
+                    <a class="card" href="./project/NBeaute.html">
+                        <img class="card-img" src="./images/img_project cover/project_nbeaute.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-web">WEB</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">N.Beaute</h2>
+                                    <p class="text-gray-600">保養品電商網</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project app">
+                    <a class="card" href="./project/Hi,Chef.html">
+                        <img class="card-img" src="./images/img_project cover/project_hichef.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-app">APP</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">Hi,Chef</h2>
+                                    <p class="text-gray-600">食譜應用程式</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-4 col-lg-6 col-md-12 project app">
+                    <a class="card" href="./project/J-Mentor.html">
+                        <img class="card-img" src="./images/img_project cover/project_jmentor.png" alt="">
+                        <div class="card-content">
+                            <span class="tag tag-app">APP</span>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h2 class="h4">J-Mentor</h2>
+                                    <p class="text-gray-600">日文教學應用程式</p>
+                                </div>
+                                <span class="card-arrow"><i class="fa-solid fa-arrow-right-long text-icon"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <p class="text-gray-900 mb2">如有任何問題，歡迎與我聯絡 !</p>
+            <a href="#" class="btn-icon m0-auto"><i class="fa-regular fa-envelope text-icon"></i></a>
+        </div>
+        <p class="footer-btm text-gray-600 "> Designed by Eddie Huang © 2022 </p>
+    </footer>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>

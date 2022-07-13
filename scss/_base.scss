@@ -1,0 +1,628 @@
+body{
+    font-family: 'Noto Sans TC','Noto Sans', sans-serif;
+    color: $gray-700; 
+    line-height: inherit;
+}
+button{
+    border: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: $gray-400;
+}
+sub {
+    vertical-align: sub;
+}
+
+// 當內容不滿100vh時，讓footer置於底部
+.wrap{
+    //100vh - footer的高度
+    min-height: calc(100vh - 165px);
+}
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (max-width:992px ) {
+        max-width: 960px;
+    }
+    @media (max-width:768px ) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @media (max-width:576px ) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+// flex 內容
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: start;
+}
+    //md 平板
+@media (max-width:768px) {
+    .d-md-flex{
+        display: flex;
+    }
+    .flex-md-column{
+        flex-direction: column;
+    }
+    .flex-md-row{
+        flex-direction: row;
+    }
+    .flex-md-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-md-nowrap{
+        flex-wrap: nowrap;
+    }
+    .justify-content-md-between{
+        justify-content: space-between;
+    }
+    .justify-content-md-evenly{
+        justify-content: space-evenly;
+    }
+    .justify-content-md-center{
+        justify-content: center;
+    }
+    .justify-contnet-md-start{
+        justify-content: flex-start;
+    }
+    .align-items-md-center{
+        align-items: center;
+    }
+    .align-items-md-start{
+        align-items: start;
+    }
+    .align-items-md-start{
+        align-items: start;
+    }
+}
+    //sm 行動
+    @media (max-width:576px) {
+        .d-sm-flex{
+            display: flex;
+        }
+        .flex-sm-column{
+            flex-direction: column;
+        }
+        .flex-sm-row{
+            flex-direction: row;
+        }
+        .flex-sm-wrap{
+            flex-wrap: wrap;
+        }
+        .flex-sm-nowrap{
+            flex-wrap: nowrap;
+        }
+        .justify-content-sm-between{
+            justify-content: space-between;
+        }
+        .justify-content-sm-evenly{
+            justify-content: space-evenly;
+        }
+        .justify-content-sm-center{
+            justify-content: center;
+        }
+        .justify-contnet-sm-start{
+            justify-content: flex-start;
+        }
+        .align-items-sm-center{
+            align-items: center;
+        }
+        .align-items-sm-start{
+            align-items: start;
+        }
+        .align-items-sm-start{
+            align-items: start;
+        }
+    }      
+
+//display隱藏 / 顯示
+.d-none{
+    display: none;
+}
+@media (max-width:768px) {
+    .d-md-none{
+        display: none;
+    }
+}
+
+.d-block{
+    display: block;
+}
+@media (max-width:768px) {
+    .d-md-block{
+        display: block;
+    }
+}
+
+//格線系統
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$space;
+    margin-right: -$space;
+}
+//欄數
+.col-2{
+    width: calc((100%/12)*2);
+    padding-left: $space;
+    padding-right: $space;
+}
+.col-3{
+    width: 25%;
+    padding-left: $space;
+    padding-right: $space;
+}
+.col-4{
+    width: calc(100%/3);
+    padding-left: $space;
+    padding-right: $space;  
+}
+.col-5{
+    width: calc((100%/12)*5);
+    padding-left: $space;
+    padding-right: $space;
+}
+.col-6{
+    width: 50%;
+    padding-left: $space;
+    padding-right: $space;
+}  
+.col-10{
+    width: calc((100%/12)*10);
+    padding-left: $space;
+    padding-right: $space;
+}
+.col-12{
+    width: 100%;
+    padding-left: $space;
+    padding-right: $space;
+}
+@media (max-width:992px) {  
+    .col-lg-2{
+        width: calc((100%/12)*2);
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-lg-3{
+        width: 25%;
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-lg-4{
+        width: calc(100%/3);
+        padding-left: $space;
+        padding-right: $space;  
+    } 
+    .col-lg-6{
+        width: 50%;
+        padding-left: $space;
+        padding-right: $space;
+    }  
+    .col-lg-10{
+        width: calc((100%/12)*10);
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-lg-12{
+        width: 100%;
+        padding-left: $space;
+        padding-right: $space;
+    }
+}
+@media (max-width:768px) {  
+    .col-md-2{
+        width: calc((100%/12)*2);
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-md-3{
+        width: 25%;
+        padding-left: $space;
+        padding-right: $space;
+    }  
+    .col-md-4{
+        width: calc(100%/3);
+        padding-left: $space;
+        padding-right: $space;    
+    }
+    .col-md-6{
+        width: 50%;
+        padding-left: $space;
+        padding-right: $space;
+    } 
+    .col-md-10{
+        width: calc((100%/12)*10);
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-md-12{
+        width: 100%;
+        padding-left: $space;
+        padding-right: $space;
+    }
+}
+@media (max-width:576px) { 
+    .col-sm-2{
+        width: calc((100%/12)*2);
+        padding-left: $space;
+        padding-right: $space;
+    } 
+    .col-sm-3{
+        width: 25%;
+        padding-left: $space;
+        padding-right: $space;
+    }  
+    .col-sm-4{
+        width: calc(100%/3);
+        padding-left: $space;
+        padding-right: $space;    
+    }
+    .col-sm-6{
+        width: 50%;
+        padding-left: $space;
+        padding-right: $space;
+    } 
+    .col-sm-10{
+        width: calc((100%/12)*10);
+        padding-left: $space;
+        padding-right: $space;
+    }
+    .col-sm-12{
+        width: 100%;
+        padding-left: $space;
+        padding-right: $space;
+    }
+}
+
+//寬度
+.w-100{
+    width: 100%;
+}
+//高度
+.h-100{
+    height: 100%;
+}
+
+//文字相關
+    //文字位置
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-icon{
+    font-size: $fz-4;
+    line-height: 1.7;
+    @media (max-width:768px) {
+        font-size: $fz-5;
+    }
+}
+@media (max-width:768px) {
+    .text-md-center{
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .text-sm-center{
+        text-align: center;
+    }
+}
+
+    //文字顏色
+.text-primary{
+    color: $primary;
+}
+.text-gray-900{
+    color: $gray-900;
+}
+.text-gray-800{
+    color: $gray-800;
+}
+.text-gray-700{
+    color: $gray-700;
+}
+.text-gray-600{
+    color: $gray-600;
+}
+.text-white{
+    color: $white;
+}
+//按鈕相關
+.btn{
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    //預設按鈕為16px，不另外設md
+.btn-lg{
+    font-size: $fz-3;
+}
+.btn-link{
+    color: $gray-700;
+    &:hover{
+        color: $primary;
+        font-weight: bold;
+    }
+}
+
+.btn-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    &:hover{
+        color: $primary;
+        background-color: $pri-light;
+    }
+}
+    //框線按鈕
+.btn-outline-primary{
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: $white;
+    &:hover{
+        background-color: $pri-light;
+    }
+}
+.btn-outline-gray{
+    color: $gray-700;
+    border: 1px solid $gray-700;
+    background-color: $white;
+    &:hover{
+        background-color: $gray-100;
+    }
+}
+.btn-outline-gray-500{
+    color: $gray-500;
+    border: 1px solid $gray-500;
+    background-color: $white;
+    &:hover{
+        background-color: $gray-100;
+    }
+}
+
+    //填色按鈕
+.btn-primary{
+    color: $white;
+    background-color: $primary;
+    border: none;
+    &:hover{
+        background-color: lighten($primary,10%);
+    }
+}
+.btn-black{
+    color: $white;
+    background-color: $gray-900;
+    &:hover{
+        background-color: lighten($gray-900,10%);
+    }
+}
+    //連結
+.link{
+    display: inline-block;
+    text-decoration: underline;
+    color: $secondary;
+}
+//標題
+.h1{
+    font-size: $fz-8;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
+.h2{
+    font-size: $fz-7;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
+.h3{
+    font-size: $fz-6;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+}
+.h4{
+    font-size: $fz-4;
+    font-weight: bold;
+}
+.h5{
+    font-size: $fz-3;
+    font-weight: bold;
+}
+.h6{
+    font-size: $fz-2;
+    font-weight: bold;
+}
+.title{
+    font-size: $fz-3;   
+}
+.title2{
+    font-size: $fz-2;
+}
+.subtitle{
+    font-size: $fz-1;
+    font-weight: bold;
+}
+.caption{
+    font-size: $fz-0;
+    font-weight: bold;
+}
+@media (max-width:768px) { 
+    .h1-md{
+        font-size: $fz-8;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h2-md{
+        font-size: $fz-7;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h3-md{
+        font-size: $fz-6;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h4-md{
+        font-size: $fz-4;
+        font-weight: bold;
+    }
+    .h5-md{
+        font-size: $fz-3;
+        font-weight: bold;
+    }
+    .h6-md{
+        font-size: $fz-2;
+        font-weight: bold;
+    }
+    .title-md{
+        font-size: $fz-3;   
+    }
+    .title2-md{
+        font-size: $fz-2;
+    }
+    .subtitle-md{
+        font-size: $fz-1;
+    }
+    .caption-md{
+        font-size: $fz-0;
+        font-weight: bold;
+    } 
+}
+@media (max-width:576px) { 
+    .h1-sm{
+        font-size: $fz-8;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h2-sm{
+        font-size: $fz-7;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h3-sm{
+        font-size: $fz-6;
+        font-weight: bold;
+        letter-spacing: 0.06em;
+    }
+    .h4-sm{
+        font-size: $fz-4;
+        font-weight: bold;
+    }
+    .h5-sm{
+        font-size: $fz-3;
+        font-weight: bold;
+    }
+    .h6-sm{
+        font-size: $fz-2;
+        font-weight: bold;
+    }
+    .title-sm{
+        font-size: $fz-3;   
+    }
+    .title2-sm{
+        font-size: $fz-2;
+    }
+    .subtitle-sm{
+        font-size: $fz-1;
+    }
+    .caption-sm{
+        font-size: $fz-0;
+        font-weight: bold;
+    } 
+}
+
+//卡片
+.card{
+    border: 1px solid $gray-200;
+    border-radius: 12px;
+    margin-bottom: $space-2;
+    text-align: left;
+    transition: 0.3s;
+    &:hover{
+        cursor: pointer;
+        border: 1px solid $gray-100;
+        box-shadow: 0px 0px 14px rgba(23, 23, 23, 0.22);
+        transform: translateY(-4px);
+
+        & .card-content{
+            padding: 32px;
+        }
+        & .card-arrow{
+            transition: 0.3s;
+            color: $primary;
+        }
+        & .card-img{
+            background-color: $primary;
+            opacity: 0.9;
+        }
+    }
+    &-img{
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        transition: 0.3s;
+    }
+    &-content{
+        padding: 32px 40px 32px 32px;
+        position: relative;
+        transition: 0.3s;
+    }
+    &-arrow{
+        color: $gray-600;
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+}
+// 卡片標籤
+.tag{
+    padding: 6px 12px;
+    font-size: $fz-0;
+    font-weight: bold;
+    border-radius: 8px;
+    position: absolute;
+    top: -16px;
+}
+.tag-app{
+    color: $primary;
+    background-color: $pri-light;   
+}
+.tag-web{
+    color: $secondary;
+    background-color: $sec-light;
+}

@@ -1,0 +1,130 @@
+.menu{
+    width: 100%;
+    background-color: $white;
+    position:fixed;
+    z-index:9998;
+    top:0;
+    //滾動時動畫
+    transition:all 0.3s ease-in-out;
+
+    &Item{
+        margin-left: $space;
+        margin-right: $space;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+//menu展開
+.extend{
+    padding-top: $space-3;
+    padding-bottom: $space-3 - 1px;
+    border-bottom: 1px solid rgba(242,242,242,0);
+    @media (max-width:768px) {
+        padding-top: $space-3 - 4px;
+        padding-bottom: $space-3 - 5px;
+    }
+}
+//menu收合
+.shirk{
+    padding-top: $space-2;
+    padding-bottom:  $space-2 - 1px;
+    border-bottom: 1px solid rgba(242,242,242,1);
+    @media (max-width:768px) {
+        padding-top: $space-2 - 4px;
+        padding-bottom: $space-2 - 5px;
+    }    
+}
+//flex jusb不會置中
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//漢堡選單
+.burgerList{
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    padding-top: 12px;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+
+    //位移
+    // 漢堡選單-收合動畫
+    transform: translate(0,-100%);
+    transition-timing-function: ease-in;
+    transition: transform 0.8s;
+    // 漢堡選單-展開動畫
+    &-active{
+        transform: translate(0,0);
+        transition-timing-function: ease-out;
+        transition: transform 0.5s;
+    }
+    &-item{
+        width: 100%;
+        text-align: center;
+        // font-weight: bold;
+    }
+    &-btn{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        color: $gray-700; 
+        font-size: $fz-4;
+        margin-bottom: $space;
+        &:active{
+            background-color: $primary;
+            color: $white;
+        }
+   }
+}
+//增加漢堡選單menu 的點擊空間
+.burgerMenu-btn{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.burgerClose{
+    text-align: right;
+    //增加漢堡選單close 的點擊空間
+    &-btn{
+        //讓按鈕不會整列呈現(reset有設定a為block)
+        display: inline-block;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.footer{
+    background-color: $gray-100;
+    padding-top: $space-1;
+    padding-bottom: $space-1;
+
+    &-top{
+        border-bottom: 1px solid $gray-400;
+        padding-top: $space-1;
+        padding-bottom: $space-1;
+    }
+    &-btm{
+        padding-top: $space-1;
+    }
+}
+
+.go-top{
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: 90vh;
+    right: 40px;
+    @media (max-width:768px) {
+        right: 32px;
+    }
+    @media (max-width:576px) {
+        right: 16px;
+    }
+}
