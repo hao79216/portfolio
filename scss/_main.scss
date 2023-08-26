@@ -91,6 +91,15 @@
         background-color: $gray-100;
         border-radius: $space-2;
     }
+
+    &-offset {
+        margin-left: 112px;
+
+        @media (max-width: 576px) {
+            margin-right: 0;
+            margin-bottom: $space-3;
+        }
+    }
 }
 
 //project 介紹頁 
@@ -181,6 +190,7 @@
         width: 100%;
         text-align: center;
     }
+
     &-proto {
         margin: 0;
         width: 100%;
@@ -191,6 +201,7 @@
         list-style-type: decimal;
         list-style-position: inside;
     }
+
     &-logo {
         max-width: 678px;
         height: auto;

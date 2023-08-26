@@ -1106,6 +1106,15 @@ sub {
   background-color: #F2F2F2;
   border-radius: 16px;
 }
+.job-offset {
+  margin-left: 112px;
+}
+@media (max-width: 576px) {
+  .job-offset {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
 
 .space {
   height: 88px;
