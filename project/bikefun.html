@@ -28,15 +28,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/all.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6203HTWT5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-Y6203HTWT5');
-    </script>
 </head>
 
 <body>
@@ -117,9 +108,9 @@
             <div class="col-10 col-sm-12">
                 <h2 class="subtitle text-gray-800 mb2">題目 - 自行車道地圖資訊整合網 / Web</h2>
                 <p class="mb5 mb3-sm">此作品是參加的 2021 The F2E 精神時光屋的 UI 作品，以<span
-                        class="text-primary">臺灣共單車想與自行車道整合</span>為主題，結合交通部<span class="text-primary">「運輸資料流通服務平臺」(TDX)
+                        class="text-primary">臺灣共享單車與自行車道整合</span>為主題，結合交通部<span class="text-primary">「運輸資料流通服務平臺」(TDX)
                         Open API
-                    </span>設計出一個<span class="text-primary">查詢租借狀況與車道周圍景點</span>的網站</p>
+                    </span>設計出<span class="text-primary">查詢 Youbike 租借與自行車道</span>的網站</p>
                 <div class="d-flex justify-content-between flex-sm-column">
                     <div class="div-column mb3-sm">
                         <p class="subtitle text-gray-800 mb2">執行時間:</p>
@@ -169,13 +160,15 @@
             </div>
             <div class="col-10 col-sm-12">
                 <p class="mb1">
-                    透過情境模擬了解，使用者希望能在旅途中搜尋到YouBike狀況與自行車路線地圖，來解決必須透過不同網站查詢的痛點。
+                    透過情境模擬了解，使用者希望能在旅途中搜尋到"YouBike狀況"與"自行車路線地圖"，來解決必須"透過不同網站查詢"的痛點。
                 </p>
                 <p>加入使用者故事訂定的目標是</p>
-                <p class="mb3">1. Youbike及時租借狀況<br>
-                    2.定位功能<br>
-                    3.自行車道地圖路線<br>
-                    4.車道周圍餐廳及景點(結合API的圖資)</p>
+                <p class="mb3">
+                    1. Youbike及時租借狀況與列表<br>
+                    2.自行車道地圖路線與列表<br>
+                    3.定位功能<br>
+                    4.響應式平台<br>
+                    5.車道周圍餐廳及景點(結合API的圖資)</p>
             </div>
             <div class="col-12">
                 <a href="../images/bikefun/IA.png" data-lightbox="IA" data-title="資訊架構" class="IA-bikefun">
@@ -190,19 +183,27 @@
         <a href="../images/bikefun/style.png" data-lightbox="Style" data-title="樣式" class="Style">
             <img src="../images/bikefun/style.png" alt="樣式與規範 Style">
         </a>
+        <a href="../images/bikefun/style_2.png" data-lightbox="Style" data-title="樣式" class="Style">
+            <img src="../images/bikefun/style_2.png" alt="樣式與規範 Style">
+        </a>
     </div>
     <!-- 特色介紹 -->
     <div class="container mb-xl mb8-md mb5-sm">
         <h3 class="h4 text-center text-primary mb4 mb3-sm">特色介紹</h3>
         <div class="mb-xl mb8-md mb5-sm">
             <p class="h6 text-gray-800 mb2">1.首頁</p>
-            <p>畫面僅提供Youbike關鍵字與縣市搜尋，避免其他資訊干擾使用者使用操作，當在外出遊時，開啟行動版網頁就能直接搜尋單車位置與狀況。</p>
+            <p class="mb2">畫面僅提供Youbike關鍵字與縣市搜尋，避免其他資訊干擾使用者使用操作，當在外出遊時，開啟行動版網頁就能直接搜尋單車位置與狀況。</p>
+            <p>由情境模擬得知，使用者的操作流程是，旅行中途 → 尋找車道 → 租借Youbike， <br>
+                如果先 搜尋車道再前往車道，抵達到自行車道時 Youbike可能會無單車的狀況發生。<br>
+                所以讓使用者先得知 Youbike 站點狀況再尋找自行車道會更方便。
+            </p>
             <a href="../images/bikefun/product_intro01_bikefun.png" data-lightbox="hi-fi" data-title="首頁"
                 class="intro1-bikefun">
                 <img src="../images/bikefun/product_intro01_bikefun.png" alt="首頁 intro1-bikefun">
             </a>
         </div>
         <div class="mb-xl mb8-md mb5-sm">
+            <p class="h6 text-gray-800 mb2">2.自行車頁</p>
             <p>提供站點名稱並分類 1.0 與 2.0 並清楚知道目前各站點的狀況。</p>
             <a href="../images/bikefun/product_intro02_bikefun.png" data-lightbox="hi-fi" data-title="站點"
                 class="intro2-bikefun">
@@ -212,12 +213,17 @@
         <div class="mb-xl mb8-md mb5-sm">
             <p>行動版會顯示搜尋列表，使用者點擊「顯示地圖」列表收起並展開地圖。「顯示列表」則展開列表資訊。</p>
             <a href="../images/bikefun/product_intro03_bikefun.png" data-lightbox="hi-fi" data-title="顯示列表"
-                class="intro2-bikefun">
+                class="intro2-bikefun mb-2">
                 <img src="../images/bikefun/product_intro03_bikefun.png" alt="顯示列表 intro2-bikefun">
+            </a>
+            <p>預設隱藏搜尋框，點選 icon 顯示以確保整體地圖可視性</p>
+            <a href="../images/bikefun/product_intro03-2_bikefun.png" data-lightbox="hi-fi" data-title="顯示列表"
+                class="intro2-bikefun mb-2">
+                <img src="../images/bikefun/product_intro03-2_bikefun.png" alt="顯示列表 intro2-bikefun">
             </a>
         </div>
         <div class="mb-xl mb8-md mb5-sm">
-            <p class="h6 text-gray-800 mb2">2.搜尋車道</p>
+            <p class="h6 text-gray-800 mb2">3.搜尋車道</p>
             <p>畫面顯示車道圖資，顯示車道大致範圍，進階篩選能依照短、中、長程，車道是否為單向、雙向。</p>
             <p>選定車道後顯示附近景點與餐廳，讓使用者能好好規劃旅程。</p>
             <a href="../images/bikefun/product_intro04_bikefun.png" data-lightbox="hi-fi" data-title="車道搜尋列表"
@@ -233,22 +239,18 @@
                 <h3 class="h6 text-primary">學到什麼</h3>
             </div>
             <div class="col-10 col-sm-12">
-                <p class="mb2">
-                    這次作品與前一個相比，用到了更多支的API，所以整理的時間比做稿的時間還長，搞懂每個欄位提供的資料知道有提供什麼狀態，例如營運狀態
-                    ，通常只會想到正常營運與暫停營運，在了解後才知道地圖上也會顯示已經完全停止營運的站點。而此狀態是否有顯示的必要呢!?我覺得是有的，可以
-                    提示曾經使用過的使用者此站點已經廢除不再使用，而不會特地走到附近才發現站點已經消失。
-                </p>
+                <p class="mb2">在此作品中，有用到好幾支API，需要確認元件上的欄位和資料該如何呈現。</br>
+                    元件的標註如何能更清楚的呈現，透過參考其他設計師的整理方式，整理元件和交付內容。
+                    使用 figma 上的 comment 功能與工程師溝通，而此次也很高興工程師有順利的完成作品。</p>
                 <a href="../images/bikefun/component.png" data-lightbox="API" data-title="對照api" class="comparison-1">
                     <img class="mb5 mb3-sm" src="../images/bikefun/component.png" alt="對照api comparison-1">
                 </a>
-                <p class="mb2">而在此作品中，讓我感到困擾的點是，需要怎麼整理、敘述才能讓工程師看得懂，透過參考其他設計師的整理方式，新增說明頁並把每個
-                    重點一一標註出來，並使用figma上的add comment功能與工程師溝通，而此次也很高興工程師有順利的完成作品。</p>
                 <a href="../images/bikefun/progress.png" data-lightbox="API" data-title="對照api" class="comparison-2">
                     <img class="mb5 mb3-sm" src="../images/bikefun/progress.png" alt="對照api comparison-2">
                 </a>
                 <p class="subtitle mb2">完成作品連結</p>
-                <p class="title">工程師: <a class="link btn" href="https://zyc0626.github.io/taiwan_bicycle_demo/#/"> 詠銓
-                    </a></p>
+                <p class="title">工程師: <a class="link btn" href="https://zyc0626.github.io/taiwan_bicycle_demo/#/" target="_blank"> 詠銓</a></p>
+                <p>(TDX) Open API 於2022年更新，作品 api 功能已失效</p>
             </div>
         </div>
     </div>
@@ -267,10 +269,10 @@
     <!-- jQuery -->
     <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js></script>
     <!-- lightbox -->
-    <script src="../js/lightbox.min.js"></script>
+    <script src="/js/lightbox.min.js"></script>
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../js/all.js"></script>
+    <script src="/js/all.js"></script>
 </body>
 
 </html>
