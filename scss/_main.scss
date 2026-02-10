@@ -70,6 +70,7 @@
         border: 1px solid $gray-100;
         border-radius: $space;
         margin-right: $space-5;
+        object-fit: contain;
 
         @media (max-width: 576px) {
             margin-right: 0;

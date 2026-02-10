@@ -1085,6 +1085,8 @@ sub {
   border: 1px solid #F2F2F2;
   border-radius: 8px;
   margin-right: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 576px) {
   .job-logo {
