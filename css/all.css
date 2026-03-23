@@ -414,6 +414,10 @@ sub {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -468,6 +472,18 @@ sub {
 
 .text-white {
   color: #fff;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.list-style-disc {
+  list-style-type: disc;
+}
+
+.list-style-inside {
+  list-style-position: inside;
 }
 
 .btn {
@@ -1153,6 +1169,15 @@ sub {
 }
 .projectHead-8 {
   background-image: url(../images/picchu/img_product_header.png);
+}
+.projectHead-9 {
+  background-image: url(../images/cdp_lifecycletag/img_product_header.png);
+}
+.projectHead-10 {
+  background-image: url(../images/cdp_groupmsg/img_product_header.png);
+}
+.projectHead-11 {
+  background-image: url(../images/nix_dailycheckin/img_product_header.png);
 }
 @media (max-width: 992px) {
   .projectHead {
