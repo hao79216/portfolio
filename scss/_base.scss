@@ -377,7 +377,9 @@ sub {
 .list-style-inside{
     list-style-position: inside;
 }
-
+.list-style-decimal{
+    list-style-type:decimal;
+}
 //按鈕相關
 .btn{
     padding: 8px 16px;
